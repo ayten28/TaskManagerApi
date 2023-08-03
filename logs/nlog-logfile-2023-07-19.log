@@ -1,0 +1,10 @@
+2023-07-19 15:13:45.5521||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 15:23:17.3885||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 15:25:06.1420||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 15:27:31.2707||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 15:37:35.0794||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 15:39:04.9109||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 16:29:41.8206||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 16:30:11.5225||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 16:31:01.7321||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 
+2023-07-19 16:53:58.4983||ERROR|TaskManager.Service.Service.LoggerManager|Invalid model state for the object. Controller: Task, action: CreateTask 

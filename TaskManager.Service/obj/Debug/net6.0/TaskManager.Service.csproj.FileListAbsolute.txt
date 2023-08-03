@@ -1,0 +1,17 @@
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Service.deps.json
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Service.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Service.pdb
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.csproj.AssemblyReference.cache
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.AssemblyInfoInputs.cache
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.AssemblyInfo.cs
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.csproj.CoreCompileInputs.cache
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\refint\TaskManager.Service.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.pdb
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\ref\TaskManager.Service.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Core.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Data.dll
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Core.pdb
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\bin\Debug\net6.0\TaskManager.Data.pdb
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Service\obj\Debug\net6.0\TaskManager.Service.csproj.CopyComplete
