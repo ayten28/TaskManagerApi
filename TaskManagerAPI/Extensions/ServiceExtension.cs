@@ -36,6 +36,7 @@ namespace TaskManagerAPI.Extensions
                 map.AddProfile<TaskMappingProfile>();
             //    map.AddProfile<StudentMappingProfile>();
                 map.AddProfile<UserMappingProfile>();
+                map.AddProfile<CommentMappingProfile>();
             });
             services.AddSingleton(mapperConfig.CreateMapper());
         }
@@ -139,6 +140,7 @@ namespace TaskManagerAPI.Extensions
             services.AddScoped<ValidationFilterAttribute>();
             services.AddScoped<ValidateTaskExists>();
             services.AddScoped<ValidationUserRoles>();
+            services.AddScoped<ValidateCommentExists>();
             //services.AddScoped<ValidateStudentExistsForTeacher>();
         }
     }

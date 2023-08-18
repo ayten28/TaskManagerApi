@@ -15,6 +15,7 @@ namespace TaskManager.Service.Interface
         Task<ApiResponse<List<TaskDto>>> GetMyAssignnedTask(string assignedUser, bool trackChanges);
         Task<ApiResponse<List<TaskDto>>> GetMyDoneAssignedTask(string assignedUser, bool trackChanges);
         System.Threading.Tasks.Task UpdateTask(Core.Domain.Task task);
+        Task<ApiResponse> ResolveTask(int id);
 
         //Task<IActionResult> CreateTask2(Core.Domain.Task task);
     }

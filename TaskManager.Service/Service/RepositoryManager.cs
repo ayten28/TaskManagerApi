@@ -23,6 +23,7 @@ namespace TaskManager.Service.Service
         private ITaskRepository _taskRepository;
         private IUserRoleManager _userRoleManager;
         private RoleManager<Role> _roleManager;
+        private ICommentsRepository _commentsRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext, UserManager<User> userManager,
             IMapper mapper, IConfiguration configuration, RoleManager<Role> roleManager)
@@ -59,6 +60,16 @@ namespace TaskManager.Service.Service
                 if (_userRoleManager is null)
                     _userRoleManager = new UserRoleManager(_userManager, _configuration, _mapper, _roleManager);
                 return _userRoleManager;
+            }
+        }
+
+        public ICommentsRepository Comments
+        {
+            get
+            {
+                if (_commentsRepository is null)
+                    _commentsRepository = new CommentsRepository(_repositoryContext, _userManager, _mapper);
+                return _commentsRepository;
             }
         }
 

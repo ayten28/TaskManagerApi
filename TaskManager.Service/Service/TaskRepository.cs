@@ -147,6 +147,32 @@ namespace TaskManager.Service.Service
         }
         public async System.Threading.Tasks.Task CreateTask(Core.Domain.Task task) => await CreateAsync(task);
 
-        
+        public async Task<ApiResponse> ResolveTask(int id)
+        {
+            var response = new ApiResponse();
+            var task = await GetTaskById(id, true);
+            if (task != null)
+            {
+                try
+                {
+                    task.IsDone = true;
+                    await RepositoryContext.SaveChangesAsync();
+                }
+                catch (Exception ex)
+                {
+                    response.Code = Core.Response.ResponseCode.Failed;
+                    response.IsSuccess = false;
+                    response.Message = ex.Message;
+                }
+            }
+            else 
+            {
+                response.Code = Core.Response.ResponseCode.DataNotFound;
+                response.IsSuccess = false;
+                response.Message = $"Task with ID: {id} couldnot be found";
+            }
+            return response;
+        }
+
     }
 }

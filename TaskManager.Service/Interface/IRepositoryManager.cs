@@ -13,5 +13,6 @@ namespace TaskManager.Service.Interface
         IUserAuthenticationRepository UserAuthentication { get; }
         Task SaveAsync();
         IUserRoleManager RoleManager { get; }
+        ICommentsRepository Comments { get; }
     }
 }

@@ -16,7 +16,7 @@ namespace TaskManagerAPI.Controllers
         {
         }
 
-        [HttpPost]
+        [HttpPost("createTask")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<ApiResponse<TaskManager.Core.Domain.Task>> CreateTask([FromBody] TaskCreationDto task)
         {
@@ -115,6 +115,12 @@ namespace TaskManagerAPI.Controllers
             }          
             
             return response;
+        }
+
+        [HttpPut("ResolveTask/{taskId}")]
+        public async Task<ApiResponse> ResolveTask(int taskId)
+        {
+            return await _repository.Task.ResolveTask(taskId);
         }
 
     }
