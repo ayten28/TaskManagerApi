@@ -49,7 +49,7 @@ namespace TaskManagerAPI.Controllers
         }
 
         [HttpGet("getUsersList")]
-        [Authorize]
+        //[Authorize]
         public async Task<ApiResponse<List<User>>> GetAllUsers()
         {
                 var users = await _repository.UserAuthentication.GetUserListAsync();

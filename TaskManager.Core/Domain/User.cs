@@ -8,6 +8,7 @@ namespace TaskManager.Core.Domain
         public string? LastName { get; set; }
         public string? Position { get; set; }
         public string? Gender { get; set; }
-        public bool Blocked { get; set; }
+        public bool Blocked { get; set; }        
+        public string? PhotoUrl { get; set; }
     }
 }

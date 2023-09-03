@@ -1,4 +1,5 @@
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.deps.json
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.runtimeconfig.json
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.dll
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.pdb
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Core.dll
@@ -12,6 +13,5 @@ D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\Ta
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.dll
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\refint\TaskManager.Data.dll
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.pdb
-D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\ref\TaskManager.Data.dll
-D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.runtimeconfig.json
 D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.genruntimeconfig.cache
+D:\ProjectsAyten\TaskManager\TaskManagerAPI\TaskManager.Data\obj\Debug\net6.0\ref\TaskManager.Data.dll

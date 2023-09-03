@@ -16,6 +16,7 @@ namespace TaskManager.Service.Interface
         Task<ApiResponse<User>> UpdateUserInfo(string id, UserUpdateDto user);
         Task<ApiResponse> BlockUser(string id);
         Task<ApiResponse> ChanngePassword(string id, UpdateUserPasswordDto pswd);
+        Task<ApiResponse> UpdatePhotoUrl(string id, string url);
 
         //Task<List<User>> GetUserListExcept(string currenUser);
     }

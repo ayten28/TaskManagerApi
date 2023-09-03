@@ -14,5 +14,6 @@ namespace TaskManager.Service.Interface
         Task SaveAsync();
         IUserRoleManager RoleManager { get; }
         ICommentsRepository Comments { get; }
+        IUploadManager UploadManager { get; }
     }
 }

@@ -32,6 +32,10 @@ namespace TaskManager.Service.Service
             _configuration = configuration;
         }
 
+        public UserAuthenticationRepository()
+        {
+        }
+
         public async Task<ApiResponse<RegisterResonseDto>> RegisterUserAsync(UserRegistrationDto userRegistration)
         {
             var user = _mapper.Map<User>(userRegistration);
@@ -233,6 +237,44 @@ namespace TaskManager.Service.Service
                 result.Code = Core.Response.ResponseCode.DataNotFound;
                 result.Message = "Data could not be found";
                 result.IsSuccess = false;
+            }
+            return result;
+        }
+
+        public async Task<ApiResponse> UpdatePhotoUrl(string id, string url)
+        {
+           
+              var userExists = await _userManager.FindByIdAsync(id);
+            var result = new ApiResponse();
+            if (userExists == null)
+            {
+                result.Code = Core.Response.ResponseCode.DataNotFound;
+                result.Message = "Data could not be found";
+                result.IsSuccess = false;
+            }
+            else
+            {
+                userExists.PhotoUrl = url;
+                try 
+                {
+                    var data = await _userManager.UpdateAsync(userExists);
+                    if (!data.Succeeded)
+                    {
+                        result.Code = Core.Response.ResponseCode.Failed;
+                        result.IsSuccess = false;
+                        foreach (var error in data.Errors)
+                            result.Message += ' ' + error.Description;
+                    }
+                    else
+                    {
+                        result.Code = Core.Response.ResponseCode.Success;
+                    }
+                }
+                catch (Exception ex) {
+                    result.Code = Core.Response.ResponseCode.Failed;
+                    result.IsSuccess = false;
+                        result.Message = ex.Message;
+                }                             
             }
             return result;
         }

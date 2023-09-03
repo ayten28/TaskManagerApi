@@ -141,6 +141,7 @@ namespace TaskManagerAPI.Extensions
             services.AddScoped<ValidateTaskExists>();
             services.AddScoped<ValidationUserRoles>();
             services.AddScoped<ValidateCommentExists>();
+
             //services.AddScoped<ValidateStudentExistsForTeacher>();
         }
     }
