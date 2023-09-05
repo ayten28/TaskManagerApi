@@ -81,7 +81,7 @@ namespace TaskManager.Service.Service
                 if (_userAuthenticationRepository is null)
                     _userAuthenticationRepository = new UserAuthenticationRepository(_userManager, _configuration, _mapper);
                 if (_uploadManager is null)
-                    _uploadManager = new UploadManager(_userAuthenticationRepository, _configuration);
+                    _uploadManager = new UploadManager(_repositoryContext,_userAuthenticationRepository, _configuration);
                 return _uploadManager;
             }
         }

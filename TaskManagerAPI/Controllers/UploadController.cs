@@ -19,5 +19,27 @@ namespace TaskManagerAPI.Controllers
             var result = await _repository.UploadManager.UploadPhoto(userId, photo);
             return result;
         }
+
+        [HttpPost("uploadFiles/{taskId}")]
+        public async Task<ApiResponse> UploadTaskFiles(int taskId, List<IFormFile> files)
+        {
+            var result = await _repository.UploadManager.UploadFiles(taskId, files);
+            return result;
+        }
+
+        [HttpGet("getTaskFiles/{taskId}")]
+        public async Task<ApiResponse<List<TaskFiles>>> GetTaskById(int taskId)
+        {
+            var task = await _repository.UploadManager.GetFilesByTaskId(taskId, trackChanges: false);
+            return task;
+            
+        }
+
+        [HttpPost("deleteFile/{Id}")]
+        public async Task<ApiResponse> UploadTaskFiles(int Id)
+        {
+            var result = await _repository.UploadManager.DeleteFiles(Id, trackChanges: false);
+            return result;
+        }
     }
 }

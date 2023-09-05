@@ -24,6 +24,8 @@ namespace TaskManager.Core.Mapping
                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.CreateUserLogin))
                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.AssignUserLogin));
 
+            CreateMap<TaskFiles, TaskFileDto>();
+
         }
     }
 }
